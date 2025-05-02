@@ -1,9 +1,9 @@
 Arch installation scripts
 
-1) connect with iwctl
-2) make partitions using fdisk
-    - 512 (EFI type)
-    - Rest 
+1) connect using iwctl
+2) make partitions
+    - 512M (EFI type)
+    - All the remaining space
 
 3) Install the system
 ```
