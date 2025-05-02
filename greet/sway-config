@@ -1,0 +1,1 @@
+exec "gtkgreet --layer-shell --command sway; swaymsg exit"
