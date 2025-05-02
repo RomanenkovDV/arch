@@ -5,6 +5,8 @@ Arch installation scripts
     - 512 (EFI type)
     - Rest 
 
+```
 curl -L -o arch.zip https://github.com/RomanenkovDV/arch/archive/refs/heads/master.zip
-unzip arch.zip -d arch
-./arch/install.sh
+unzip arch.zip
+./arch-master/install.sh
+```
