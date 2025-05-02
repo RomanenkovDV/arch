@@ -26,6 +26,7 @@ pacstrap /mnt amd-ucode mkinitcpio linux linux-firmware base base-devel btrfs-pr
     gvfs gvfs-afc gvfs-dnssd gvfs-google gvfs-mtp gvfs-smb gvfs-wsdd \
     wayland wl-clipboard sway swaybg swayidle swaylock greetd greetd-agreety greetd-gtkgreet \
     engrampa thunar thunar-archive-plugin thunar-volman kitty mako mpv \
+    ttf-roboto ttf-roboto-mono-nerd noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji \
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
@@ -51,4 +52,3 @@ mv $ROOT/20-wifi.network /mnt/etc/systemd/network/
 
 # greetd
 rm -rf /mnt/etc/greetd && mv $ROOT/greet /mnt/etc/greetd
-
