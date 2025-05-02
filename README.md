@@ -14,6 +14,8 @@ unzip arch.zip
 
 4) Add user
 ```
+passwd
+
 arch-chroot /mnt
 useradd -m -G wheel -s /bin/bash username
 passwd username
