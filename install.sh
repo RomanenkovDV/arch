@@ -43,8 +43,9 @@ systemctl --root=/mnt enable greetd
 ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # loader
-mv $ROOT/boot/loader.conf /mnt/boot/loader
-mv $ROOT/boot/arch.conf /mnt/boot/loader/entries
+arch-chroot /mnt bootctl install
+mv $ROOT/boot/loader.conf /mnt/boot/loader/loader.conf
+mv $ROOT/boot/arch.conf /mnt/boot/loader/entries/arch.conf
 
 # wifi
 mv /var/lib/iwd /mnt/var/lib/iwd
