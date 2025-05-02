@@ -21,4 +21,7 @@ passwd username
 
 5) Set dotfiles
 ```
+git clone https://github.com/RomanenkovDV/dotfiles.git .dotfiles
+cd .dotfiles
+stow --override *
 ```
