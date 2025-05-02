@@ -27,7 +27,7 @@ pacstrap /mnt amd-ucode mkinitcpio linux linux-firmware base base-devel btrfs-pr
     wayland wl-clipboard sway swaybg swayidle swaylock waybar greetd greetd-agreety greetd-gtkgreet \
     engrampa thunar thunar-archive-plugin thunar-volman kitty mako mpv pavucontrol \
     ttf-roboto ttf-roboto-mono-nerd noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji \
-    firefox telegram-desktop keepassxc\
+    firefox telegram-desktop keepassxc moonlight-qt \
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
