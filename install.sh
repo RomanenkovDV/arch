@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 mkfs.fat -F32 /dev/nvme0n1p1
 mkfs.btrfs -f -L ArchRoot /dev/nvme0n1p2
 
