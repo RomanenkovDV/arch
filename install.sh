@@ -25,7 +25,7 @@ pacstrap /mnt amd-ucode mkinitcpio linux linux-firmware base base-devel btrfs-pr
     iptables-nft less man-db lf curl fzf neovim git openssh flatpak stow \
     gvfs gvfs-afc gvfs-dnssd gvfs-google gvfs-mtp gvfs-smb gvfs-wsdd \
     wayland wl-clipboard sway swaybg swayidle swaylock waybar greetd greetd-agreety greetd-gtkgreet \
-    engrampa thunar thunar-archive-plugin thunar-volman kitty mako mpv \
+    engrampa thunar thunar-archive-plugin thunar-volman kitty mako mpv pavucontrol \
     ttf-roboto ttf-roboto-mono-nerd noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji \
 
 genfstab -U /mnt >> /mnt/etc/fstab
