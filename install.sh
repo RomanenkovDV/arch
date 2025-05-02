@@ -20,11 +20,11 @@ mount -o noatime,compress=zstd,space_cache=v2,subvol=@home /dev/nvme0n1p2 /mnt/h
 mount -o noatime,compress=zstd,space_cache=v2,subvol=@logs /dev/nvme0n1p2 /mnt/var/log
 mount -o noatime,compress=zstd,space_cache=v2,subvol=@snapshots /dev/nvme0n1p2 /mnt/.snapshots
 
-pacstrap /mnt amd-ucode linux linux-firmware base base-devel btrfs-progs dosfstools \
-    mesa vulkan-radeon pipewire pipewire-alsa pipewire-pulse iwd bluez brightnessctl \
-    less man-db lf curl fzf neovim git openssh flatpak stow \
+pacstrap /mnt amd-ucode mkinitcpio linux linux-firmware base base-devel btrfs-progs dosfstools \
+    mesa vulkan-radeon pipewire pipewire-alsa pipewire-pulse pipewire-jack iwd bluez brightnessctl \
+    iptables-nft less man-db lf curl fzf neovim git openssh flatpak stow \
     gvfs gvfs-afc gvfs-dnssd gvfs-google gvfs-mtp gvfs-smb gvfs-wsdd \
-    wayland wl-clipboard sway swaybg swayidle swaylock greetd greetd-gtkgreet \
+    wayland wl-clipboard sway swaybg swayidle swaylock greetd greetd-agreety greetd-gtkgreet \
     engrampa thunar thunar-archive-plugin thunar-volman kitty mako mpv \
 
 genfstab -U /mnt >> /mnt/etc/fstab
