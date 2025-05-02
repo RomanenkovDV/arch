@@ -5,12 +5,20 @@ Arch installation scripts
     - 512 (EFI type)
     - Rest 
 
+3) Install the system
 ```
 curl -L -o arch.zip https://github.com/RomanenkovDV/arch/archive/refs/heads/master.zip
 unzip arch.zip
 ./arch-master/install.sh > log
+```
 
+4) Add user
+```
 arch-chroot /mnt
 useradd -m -G wheel -s /bin/bash username
 passwd username
+```
+
+5) Set dotfiles
+```
 ```
