@@ -5,7 +5,7 @@ set -e
 mkfs.fat -F32 /dev/nvme0n1p1
 mkfs.btrfs -f -L ArchRoot /dev/nvme0n1p2
 
-monut /dev/nvme0n1p2 /mnt
+mount /dev/nvme0n1p2 /mnt
 btrfs subvolume create /mnt/@
 btrfs subvolume create /mnt/@home
 btrfs subvolume create /mnt/@logs
@@ -13,7 +13,7 @@ btrfs subvolume create /mnt/@snapshots
 umount /mnt
 
 mount -o noatime,compress=zstd,space_cache=v2,subvol=@ /dev/nvme0n1p2 /mnt
-mkdir -p /mnt/{boot,home,var/log,.snapshot}
+mkdir -p /mnt/{boot,home,var/log,.snapshots}
 
 mount /dev/nvme0n1p1 /mnt/boot
 mount -o noatime,compress=zstd,space_cache=v2,subvol=@home /dev/nvme0n1p2 /mnt/home
