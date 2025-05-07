@@ -31,10 +31,11 @@ pacstrap /mnt amd-ucode mkinitcpio linux linux-firmware base base-devel btrfs-pr
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
-systemd-firstboot --root=/mnt --locale=en_US.UTF-8 --timezone=Europe/Moscow --hostname=xx16
+echo "en_US.UTF-8 UTF-8" >> /mnt/etc/locale.gen
 echo "ru_RU.UTF-8 UTF-8" >> /mnt/etc/locale.gen
 arch-chroot /mnt locale-gen
 echo "LANG=en_US.UTF-8" > /mnt/etc/locale.conf
+systemd-firstboot --root=/mnt --timezone=Europe/Moscow --hostname=xx16
 
 systemctl --root=/mnt enable iwd
 systemctl --root=/mnt enable systemd-networkd
