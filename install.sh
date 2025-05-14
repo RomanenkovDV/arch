@@ -22,7 +22,7 @@ mount -o noatime,compress=zstd,space_cache=v2,subvol=@snapshots /dev/nvme0n1p2 /
 
 pacstrap /mnt amd-ucode mkinitcpio linux linux-firmware base base-devel btrfs-progs dosfstools \
     mesa vulkan-radeon pipewire pipewire-alsa pipewire-pulse pipewire-jack iwd bluez brightnessctl \
-    iptables-nft less man-db lf curl fzf neovim git openssh flatpak stow xdg-desktop-portal xdg-desktop-portal-wlr \
+    iptables-nft less man-db lf curl fzf ripgrep neovim git openssh flatpak stow xdg-desktop-portal xdg-desktop-portal-wlr \
     gvfs gvfs-afc gvfs-dnssd gvfs-google gvfs-mtp gvfs-smb gvfs-wsdd \
     wayland wl-clipboard sway swaybg swayidle swaylock waybar greetd greetd-agreety greetd-gtkgreet \
     engrampa thunar thunar-archive-plugin thunar-volman kitty mako mpv pavucontrol \
