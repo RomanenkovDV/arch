@@ -54,4 +54,7 @@ mv /var/lib/iwd /mnt/var/lib/iwd
 mv $ROOT/20-wifi.network /mnt/etc/systemd/network/
 
 # greetd
-rm -rf /mnt/etc/greetd && mv $ROOT/greet /mnt/etc/greetd
+rm -rf /mnt/etc/greetd
+mv $ROOT/greet /mnt/etc/greetd
+mv $ROOT/greet-background.jpg /usr/share/backgrounds
+
