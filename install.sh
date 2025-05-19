@@ -28,7 +28,7 @@ pacstrap /mnt amd-ucode mkinitcpio linux linux-firmware base base-devel btrfs-pr
     engrampa thunar thunar-archive-plugin thunar-volman kitty mako mpv pavucontrol \
     ttf-roboto ttf-roboto-mono-nerd noto-fonts noto-fonts-extra noto-fonts-cjk noto-fonts-emoji \
     firefox telegram-desktop keepassxc moonlight-qt qt5-wayland syncthing \
-    grim slurp
+    grim slurp satty
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
